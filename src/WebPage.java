@@ -42,4 +42,21 @@ public class WebPage {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    public WebPage buildUrl(String url){
+        this.url = url;
+        return this;
+    }
+    public WebPage buildTitle(String title){
+        this.title = title;
+        return this;
+    }
+    public WebPage buildContent(String content){
+        this.content = content;
+        return this;
+    }
+    public WebPage buildSummary(String summary){
+        this.summary = summary;
+        return this;
+    }
 }
