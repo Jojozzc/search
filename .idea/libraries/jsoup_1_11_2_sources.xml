@@ -2,10 +2,14 @@
   <library name="jsoup-1.11.2-sources">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/jsoup-1.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ansj_seg-5.1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/nlp-lang-1.7.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/lib/jsoup-1.11.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ansj_seg-5.1.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/nlp-lang-1.7.7-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -9,10 +9,22 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class SearchBaidu {
+public class SearchBaidu implements HTMLProvider{
     private static SearchBaidu instance = new SearchBaidu();
     final int pageSize = 10;
     private SearchBaidu(){
+
+    }
+    @Override
+    public String getHtmlContent(WebPage page){
+        if(page == null) return "";
+        try {
+            Document html = Jsoup.connect(page.getUrl()).get();
+            return html.text();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return "";
 
     }
 
@@ -115,6 +127,7 @@ public class SearchBaidu {
                     }
                 }
                 System.out.println("【---------------------data end-------------------------】");
+
             }
         }catch (Exception e){
             e.printStackTrace();
